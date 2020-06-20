@@ -65,7 +65,7 @@ If we scroll down, we can also see particular checkpoints of this activity.
 
 [Ondrej Hudcovic](https://orcid.org/0000-0001-5208-7222)
 
-[Tomas Drietomsky](TODO)
+[Tomas Drietomsky](https://orcid.org/0000-0002-3814-6000)
 
 ## License
 
