@@ -3,6 +3,8 @@
 
 ## Introduction
 
+This is a python implementation of a migration tool for the Adidas Running data to Strava. The migration works in a way that the script takes files with Adidas Running activity data and creates a new activity with this data. The data is the uploaded to Strava environment in a form of POST request.
+
 ## Prerequisites
 
 Use pip install requirements.txt
