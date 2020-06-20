@@ -68,9 +68,9 @@ If we scroll down, we can also see particular checkpoints of this activity.
 
 ## Contributors
 
-[Ondrej Hudcovic](https://orcid.org/0000-0001-5208-7222) <a href="https://orcid.org/0000-0001-5208-7222" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon">orcid.org/0000-0001-5208-7222</a>
-
 [Tomas Drietomsky](https://orcid.org/0000-0002-3814-6000) <a href="https://orcid.org/0000-0002-3814-6000" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon">orcid.org/0000-0002-3814-6000</a>
+
+[Ondrej Hudcovic](https://orcid.org/0000-0001-5208-7222) <a href="https://orcid.org/0000-0001-5208-7222" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon">orcid.org/0000-0001-5208-7222</a>
 
 ## License
 
