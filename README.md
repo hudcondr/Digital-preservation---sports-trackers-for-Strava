@@ -7,6 +7,7 @@ This is a python implementation of a migration tool for the Adidas Running data 
 
 ## Prerequisites
 
+The app was implemented in **Python 3.7.2**. To download the dependecies, **pip** manager is the best option.
 All dependencies necessary for running this app are included in `requirements.txt` file. Before executing the scripts, run
 
 ```bash
