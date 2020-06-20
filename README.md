@@ -1,4 +1,4 @@
-# Digital-preservation - migration tool - from runtastic to strava
+# Digital-preservation - Adidas Running migration tool to strava
 
 
 ## Introduction
@@ -7,34 +7,45 @@ This is a python implementation of a migration tool for the Adidas Running data 
 
 ## Prerequisites
 
-Use pip install requirements.txt
+All dependencies necessary for running this app are included in `requirements.txt` file. Before executing the scripts, run
 
-## Get your Access Token
+```bash
+$ pip install -r requirements.txt
+```
 
-Run code 
+## Authorization
+Application needs to have an access to user's profile. This is done by running the code:
+```bash
+$ python get_client_access_token.py <client_id> <client_secret>
+```
+Note, that `client_id` and `client_secret` are permanent tokens and can be found in a personal profile of a user, [here](https://www.strava.com/settings/api). This is an overview of a page where we can find this information.
 
-python get_client_access_token.py "client_id" "client_secret" - client_id & client_secret can be found at https://www.strava.com/settings/api 
+![Alt text](/images/api_profile.png?raw=true)
 
-[screenshot]
+Running the code will pop up a Strava link which requires an authorization confirmation for our application - among other things, read and write permissions. Here, the user needs to click "Authorize" button (see below).
 
-Running this code will pop up strava webpabe and will ask you to authorize access.
-For purposes of using the migration tool, you have to click authorize.
-After that, a code will appear on the webpage. Save this code in clipboard and use it in
-runtastic_to_strava_migration_tool.
+![Alt text](/images/authorization_page.png?raw=true)
 
-[screenshot]
+After authorizing the necessary rights, a user is redirected to another page, where a code appears. This needs to be run as a first argument for `runtastic_strava_migration_tool.py`. The redirect page can look like the one below.
 
-To migrate your Runtastic data to Strava, you have to run 
-python runtastic_strava_migration_tool.py "access_token" "data source type" "path to files"
-where:
-* access_token is received from previous step
-* data source type can be : json, csv or gpx
-* and path to files is path in this format : "../data/Sport-sessions/activity-data" - make sure to divide your data in folders by their data type.
 
-In strava, you can manually update activities, but only limited attributes:
-  name,
-  start_date_local,
-  elapsed_time,
-  distance,
-  activity_type
+![Alt text](/images/pop_up.png?raw=true)
 
+## Migration
+
+To migrate user's Runtastic data to Strava, the following command needs to be run:
+```bash
+$ python runtastic_strava_migration_tool.py <access_token> <data_type> <path>
+```
+
+Arguments:
+
+* "access_token" is received from previous step,
+* "data_type" is one (and only one) of the json|csv|gpx options,
+* "path" is a relative path to data a user wants to migrate
+
+Example:
+```bash
+$ python runtastic_strava_migration_tool.py 75c63be434b56ac4dd279592c3462b4262e43f5b gpx ../data/Sport-sessions/GPS-data/
+```
+The script automatically reads all relevant data in the particular directory.
