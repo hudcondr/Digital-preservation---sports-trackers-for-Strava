@@ -49,3 +49,24 @@ Example:
 $ python runtastic_strava_migration_tool.py 75c63be434b56ac4dd279592c3462b4262e43f5b gpx ../data/Sport-sessions/GPS-data/
 ```
 The script automatically reads all relevant data in the particular directory.
+
+## Result
+
+To check the outcome of the migration, a user can visit [activity section of the personal profile](https://www.strava.com/athlete/training). Below we can see an example of migrated GPS data of an activity.
+
+![Alt text](/images/example_activity_map.png?raw=true)
+
+If we scroll down, we can also see particular checkpoints of this activity.
+
+![Alt text](/images/example_activity_data_points.png?raw=true)
+
+
+## Contributors
+
+[Ondrej Hudcovic](https://orcid.org/0000-0001-5208-7222)
+
+[Tomas Drietomsky](TODO)
+
+## License
+
+[MIT](/LICENSE)
