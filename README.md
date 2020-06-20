@@ -1,4 +1,5 @@
 # Digital-preservation - Adidas Running migration tool to strava
+<a href="https://zenodo.org/badge/latestdoi/272662610"><img src="https://zenodo.org/badge/272662610.svg" alt="DOI"></a>
 
 
 ## Introduction
