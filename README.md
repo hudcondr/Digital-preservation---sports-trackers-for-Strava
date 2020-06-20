@@ -12,6 +12,11 @@ All dependencies necessary for running this app are included in `requirements.tx
 ```bash
 $ pip install -r requirements.txt
 ```
+## Process overview
+
+This is a diagram of the implemented process:
+
+![Alt text](/images/diagram.png?raw=true)
 
 ## Authorization
 Application needs to have an access to user's profile. This is done by running the code:
